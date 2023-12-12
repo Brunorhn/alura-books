@@ -1,0 +1,128 @@
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fundo-secundario);    
+    position: relative;
+    padding: 18px 24px;
+
+     
+}
+.container {
+    display: flex;
+    gap: 24px;
+    align-items: center;       
+    
+}
+.cabecalho__menu-hamburguer {
+    width: 48px;
+    height: 48px;
+    background-image: url(../assects/img/Menu.svg);
+    display: inline-block; /*permite ajust de larg e alt na linha*/
+    text-align: center;
+}
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--fundo-secundario);
+    width: 60vw;
+    height: 336px;
+    text-transform: uppercase;     
+
+}
+#menu, .icone__texto {
+    display: none;
+}
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+.lista-menu__titulo {
+    padding: 24px 0px 24px 24px;
+    color: var(--cor-destaque);
+    font-weight: 700;
+    
+}
+.lista-menu__item {
+    padding-bottom: 32px;
+    padding-left: 24px;
+}
+.lista-menu__texto {
+    text-decoration: none;    
+}
+.lista-menu__item:hover {
+    font-weight: 700;
+}
+
+.cabecalho__icones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;        
+}
+.icone {
+    display: inline-block;
+}
+.menu-navegacao {
+    display: none;
+    color: black;   
+
+}
+
+
+@media screen and (min-width:1024px) {
+    .cabecalho__menu-hamburguer, .opcoes-botao{
+        display: none; 
+    }
+    .cabecalho__texto-alura {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        color: black;    
+        .nome-alura {
+            font-weight: 700;
+        }
+    }
+    .menu-navegacao {
+        display: block;                
+    
+    }
+    .lista__menu {
+        display: flex;
+        justify-content: start;
+        gap: 32px;
+               
+    }
+    .menu__item {        
+        color: #000;    
+        text-decoration: none;
+        text-transform: uppercase;        
+        
+    }
+    
+    .opcoes-botao:checked ~ .lista-menu{
+        display: block;
+        padding: 20px 20px 0px 0px;
+        width: auto;       
+    }
+    .cabecalho {
+        padding: 18px 80px
+    }
+    .cabecalho__icones {
+        gap:60px ;
+    }
+    #iconFav {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .icone {
+        display: flex;
+        align-items: center;        
+        gap: 5px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .icone__texto {
+        display: block;
+    }
+}

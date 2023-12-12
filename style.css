@@ -1,0 +1,32 @@
+@import url(style/header.css); /*maneira de puxar as configurações de outras folhas css*/
+@import url(style/banner.css);
+@import url(style/carrocel.css);
+@import url(style/card.css);
+@import url(style/topicos.css);
+@import url(style/contato.css);
+@import url(style/footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    --fundo-principal: #EBECEE;
+    --fundo-secundario: #FFF;
+    --cor-destaque: #EB9B00;
+    --gradiente: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria:'Josefin Sans', sans-serif;
+}
+
+/*configurações padroes no body, qlquer variação pe aplicada diretamente na classe do elemento*/
+body {
+    background-color: var(--fundo-principal);
+    color: var(--fundo-secundario);
+    font-family: var(--fonte-principal);
+    font-family: 16px;
+    font-weight: 400;
+}
+.linha {
+    margin: 0px;
+    
+}
+
+

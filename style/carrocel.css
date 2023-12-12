@@ -1,0 +1,69 @@
+.carrocel__titulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-destaque);
+    padding: 24px 0px 8px 0px;
+    text-align: center;
+       
+    background-color: var(--fundo-secundario);
+     
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next  {
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+.card__row1-estrelas {
+    width: 91px;
+    height: 15px;
+    flex-shrink: 0
+}
+
+@media screen and (min-width:1024px) {
+    .swiper-pagination{
+        margin-top: 10px;
+    }
+    .carrocel__titulo {
+        font-size: 26px;
+        padding-top: 50px;        
+    }
+    .swiper-horizontal {
+        max-width: 70%;
+    }
+    .swiper-wrapper {
+        margin-top: 60px;
+        justify-content: space-between;
+        width: 725px;
+        gap: 5%;
+    }
+    .swiper-slide img {
+        margin:0;
+        flex-shrink: 1
+    }
+    
+}
+
+@media screen and (min-width:1728px) {
+    .bloco-1728px {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 7%;
+    }
+    .swiper-pagination{
+        margin-top: 74px;
+    }
+    .swiper-wrapper {
+        margin-top: 0;
+        padding-bottom: 100px;
+    }
+    
+}
