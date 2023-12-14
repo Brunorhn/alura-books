@@ -54,6 +54,10 @@
     font-weight: 700;
 }
 
+.cabecalho__texto-alura {
+    display: none;
+}
+
 .cabecalho__icones {
     display: flex;
     justify-content: space-around;
@@ -74,6 +78,7 @@
         display: none; 
     }
     .cabecalho__texto-alura {
+        display: block;
         font-family: var(--fonte-secundaria);
         font-size: 30px;
         color: black;    
